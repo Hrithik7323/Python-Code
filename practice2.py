@@ -1,5 +1,4 @@
-# store the above value in a list & sort them from "A" to "D".
+#WAP to find the occurence of '$' in a string.
 
-grade = ["C", "D", "A", "A", "B", "B", "A"]
-grade.sort()
-print(grade)
+hri = "I am $ and hello of $ and I have $of $99.99"
+print(hri.count("$"))
