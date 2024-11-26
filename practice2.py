@@ -1,4 +1,11 @@
-#WAP to find the occurence of '$' in a string.
+#figure out a way store 9 & 9.0 as separate value in the set.
+#(You can take help of bulid-in data types)
 
-hri = "I am $ and hello of $ and I have $of $99.99"
-print(hri.count("$"))
+value = {
+    ("int", 9),
+    ("float", 9.0)
+}
+print(value)
+
+#value = {"9", 9.0}
+#print(value)
