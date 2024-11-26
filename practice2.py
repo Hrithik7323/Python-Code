@@ -1,11 +1,12 @@
-#WAF to print the elements of a list a single line. (list is the parameter)
+# Write a recursive function to print all element in a list.
+# Hint: use list & index as parameters.
 
-cities = ["patna", "modinagar", "digha", "danapur"]
-heroes = ["krish", "krishna", "jiwan", "saktiman", "hanuman"]
+def fun_list(list, idx=0):
+    if(idx == len(list)):
+        return
+    print(list[idx])
+    fun_list(list, idx+1)
 
-def print_len(list):
-    for item in list:
-        print(item, end=" ")
+fruits = ["mango", "bananan", "orange", "apple", "graps"]
 
-print_len(heroes)        
-
+fun_list(fruits)

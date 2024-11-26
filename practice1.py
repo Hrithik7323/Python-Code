@@ -1,10 +1,9 @@
-#WAF to print the length of a list. (list is the parameter)
+# Write a recursive function to clculate the sum of first n natural numbers.
 
-cities = ["patna", "modinagar", "digha", "danapur"]
-heroes = ["krish", "krishna", "jiwan", "saktiman", "hanuman"]
+def natural_sum(n):
+    if(n == 0):
+        return 0
+    return natural_sum(n-1) + n
 
-def cal_len(list):
-    print(len(list))
-
-cal_len(cities)
-cal_len(heroes)    
+sum = natural_sum(50)
+print(sum)
