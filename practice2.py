@@ -1,12 +1,25 @@
-# Write a recursive function to print all element in a list.
-# Hint: use list & index as parameters.
+# Define a Employee class with attributes role, department & salary. This class also a
+# showDetails() method.
 
-def fun_list(list, idx=0):
-    if(idx == len(list)):
-        return
-    print(list[idx])
-    fun_list(list, idx+1)
+# Creat an Engineer class that inherits properties from Employee & has additional
+# attribute : name & age.
 
-fruits = ["mango", "bananan", "orange", "apple", "graps"]
+class Employee:
+    def __init__(self, role, dept, salary):
+        self.role = role
+        self.dept = dept
+        self.salary = salary
 
-fun_list(fruits)
+    def showDeatail(self):
+        print("role =", self.role)
+        print("dept =", self.dept)
+        print("salary =", self.salary)
+
+class Engineer(Employee):
+    def __init__(self, name, age):
+        self.name =name
+        self.age = age
+        super().__init__("Engineer", "IT", "75,000")
+
+eng1 = Engineer("Hrithik Kumar", 24)
+eng1.showDeatail()         

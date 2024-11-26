@@ -1,17 +1,17 @@
-# Create student  class that takes name $ marks of 3 suject as arguments in constructor. 
-# Than creats a methods to print the average. 
+#Q1. define a cirle class to create with radius r using the constuctor.
+# Define an Aera() method of the class which calculates the area of the circle.
+# Define a perameter() method of class which allows you to claculate the paremeter of the circle.
 
-class student:
-    def __init__(self, name, marks):
-        self.name = name
-        self.marks = marks
+class circle:
+    def __init__(self, radius):
+        self.radius = radius
 
-    def get_avg(self):
-        sum = 0
-        for val in self.marks:
-            sum += val
-        print("hi", self.name, "your avg score is:", sum/3)    
+    def area(self):
+        return (22/7) * self.radius ** 2
 
-s1 = student("HRithik Kumar", [65,62,71])
-s1.get_avg()
-         
+    def parameter(self):
+        return 2 * (22/7) * self.radius
+
+c1 = circle(21)
+print(c1.area())
+print(c1.parameter())

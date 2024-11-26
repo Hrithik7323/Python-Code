@@ -1,10 +1,18 @@
-#WAF to find factorial of n. (n is the parameter)
+# Create a class called order which store item & its price.
+# use Dunder function __gt__() to convey that:
 
-def cal_fact(n):
-    fact = 1
-    for i in range(1, n+1):
-        fact *= i
-    print(fact)
+#    order1 > order2  if price of order1 > price of order2
 
 
-cal_fact(5)    
+class order:
+    def __init__(self, item, price):
+        self.item = item
+        self.price = price
+
+    def __gt__(self, odr2):
+        return self.price > odr2.price
+
+odr1 = order("samosa", 12)
+odr2 = order("tea", 10)
+
+print(odr1 > odr2)
