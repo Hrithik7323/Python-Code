@@ -1,10 +1,12 @@
-# Create student  class that takes name $ marks of 3 suject as arguments in constructor. 
-# Than creats a methods to print the average. 
 
 class student:
     def __init__(self, name, marks):
         self.name = name
         self.marks = marks
+     
+    @staticmethod 
+    def her0_name():
+          print("Krish", "robot")  
 
     def get_avg(self):
         sum = 0
@@ -14,4 +16,4 @@ class student:
 
 s1 = student("HRithik Kumar", [65,62,71])
 s1.get_avg()
-         
+s1.her0_name()
