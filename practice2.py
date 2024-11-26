@@ -1,11 +1,12 @@
-#figure out a way store 9 & 9.0 as separate value in the set.
-#(You can take help of bulid-in data types)
+#You are given a list of subjects for students. Assume one classroom is 
+# requred for 1 subject. how any classroom are needed by all students.
 
-value = {
-    ("int", 9),
-    ("float", 9.0)
+#"python", "java", "C++", "python", "javascript", "java", "python", "java", "C++"
+
+students = {"python", "java", "C++", "python", "javascript", "java",
+             "python", "java", "C++"
+
 }
-print(value)
 
-#value = {"9", 9.0}
-#print(value)
+print(students)
+print(len(students))

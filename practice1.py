@@ -1,17 +1,12 @@
-#WAP  to enter marks of 3 subjects from the user store them in a dictionary. Start with an
-# empty dictionary & add one by one. Use subject name as key & marks as value.
+#store following word meanings in a python dictionary:
 
+#table : "a piece of furniture", "list of facts figures"
+#cat : "a small animal",
 
-marks = {}
+dictionary = {
+    "cat" : "a small animal",
+    "table" : ["a piece of furniture", "list of facts figures"]
 
-x = int(input("enter phy : "))
-marks.update({"phy" : x})
+}
 
-x = int(input("enter chem : "))
-marks.update({"chem" : x})
-
-x = int(input("enter math : "))
-marks.update({"math" : x})
-
-print(marks)
-
+print(dictionary)
