@@ -1,24 +1,5 @@
-#WAP to ask the user to enter of there 3 favorite movies & store them in a  list.
+#WAP to count the numer of student with the "A" grade in the following tuple.
+#   ["C", "D", "A", "A", "B", "B", "A"]
 
-movies = []
-mov = input("enter 1st movies: ")
-movies.append(mov)
-mov = input("enter 2nd movies: ")
-movies.append(mov)
-mov = input("enter 3rd movies: ")
-movies.append(mov)
-
-
-
-
-##########################################################
-
-
-print(movies)
-
-movies = []
-movies.append(input("enter 1st movies: "))
-movies.append(input("enter 2nd movies: "))
-movies.append(input("enter 3rd movies: "))
-
-print(movies)
+grade = ("C", "D", "A", "A", "B", "B", "A")
+print(grade.count("A"))
