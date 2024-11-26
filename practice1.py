@@ -1,12 +1,10 @@
-#store following word meanings in a python dictionary:
+#WAF to print the length of a list. (list is the parameter)
 
-#table : "a piece of furniture", "list of facts figures"
-#cat : "a small animal",
+cities = ["patna", "modinagar", "digha", "danapur"]
+heroes = ["krish", "krishna", "jiwan", "saktiman", "hanuman"]
 
-dictionary = {
-    "cat" : "a small animal",
-    "table" : ["a piece of furniture", "list of facts figures"]
+def cal_len(list):
+    print(len(list))
 
-}
-
-print(dictionary)
+cal_len(cities)
+cal_len(heroes)    

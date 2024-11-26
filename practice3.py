@@ -1,5 +1,10 @@
-# store the above value in a list & sort them from "A" to "D".
+#WAF to find factorial of n. (n is the parameter)
 
-grade = ["C", "D", "A", "A", "B", "B", "A"]
-grade.sort()
-print(grade)
+def cal_fact(n):
+    fact = 1
+    for i in range(1, n+1):
+        fact *= i
+    print(fact)
+
+
+cal_fact(5)    

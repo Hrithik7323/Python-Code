@@ -1,9 +1,11 @@
-#WAP to find the factorial of first n numbers. (using for)
+#WAF to print the elements of a list a single line. (list is the parameter)
 
-n = 5
-fact = 1
+cities = ["patna", "modinagar", "digha", "danapur"]
+heroes = ["krish", "krishna", "jiwan", "saktiman", "hanuman"]
 
-for i in range(1, n+1):
-    fact *= i
+def print_len(list):
+    for item in list:
+        print(item, end=" ")
 
-print("factorial = ", fact)    
+print_len(heroes)        
+
