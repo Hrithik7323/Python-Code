@@ -1,13 +1,12 @@
-#WAP to find the gratest  of 3 numbers entered by the user.
+#WAP to check if a list contains a palindrome of elements. (Hind use copy()method)
 
-a = int(input("enter first number:"))
-b = int(input("enter second number:"))
-c = int(input("enter third number:"))
+list1 = [1, 2, 1]
+list2 = [1, 2, 3]
 
-if(a >= b and a >= c):
-    print("First number is greater", a)
-elif(b >= c):
-    print("second number is greater", b)
+copy_list1  = list1.copy()
+copy_list1.reverse()
+
+if(copy_list1 == list1):
+    print("palindrome")
 else:
-    print("Third number is greater", c)
-    
+    print("NOT palindrome")

@@ -1,8 +1,5 @@
-#WAP to check if a number is a multiple of 7 or not.
+# store the above value in a list & sort them from "A" to "D".
 
-x = int(input("enter number:"))
-
-if(x % 7 == 0):
-    print("MUltiple of 7")
-else:
-    print("Not a multiple")
+grade = ["C", "D", "A", "A", "B", "B", "A"]
+grade.sort()
+print(grade)
