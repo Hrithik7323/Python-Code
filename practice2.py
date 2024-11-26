@@ -1,12 +1,9 @@
-#You are given a list of subjects for students. Assume one classroom is 
-# requred for 1 subject. how any classroom are needed by all students.
+#WAP to find the factorial of first n numbers. (using for)
 
-#"python", "java", "C++", "python", "javascript", "java", "python", "java", "C++"
+n = 5
+fact = 1
 
-students = {"python", "java", "C++", "python", "javascript", "java",
-             "python", "java", "C++"
+for i in range(1, n+1):
+    fact *= i
 
-}
-
-print(students)
-print(len(students))
+print("factorial = ", fact)    
