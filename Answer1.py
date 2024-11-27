@@ -1,27 +1,13 @@
-# Declare a div() function with two parameters. Then call the function and pass two numbers and display their division.
+# Python program to check leap year.
 
-def div(a, b):
-    if b == 0:
-        return "Error: Division by zero"
-    else:
-        return a / b
+def checkleap(year):
     
-num1 = int(input("Enter the first number : "))
-num2 = int(input("Enter the second number : "))
+    if((year % 4 == 0) and (year % 100 == 0) and (year % 400 == 0)):
+        print("The year is a leap year")
+    else:
+        print("The year is not a leap year")
 
-result = div(num1, num2)
-print("Division:", result)
+year = int(input("Enter the number : "))
 
+checkleap(year)
 
-
-# def div(a, b):
-
-#     try:
-#         result = a / b
-#         print("The result division: ")
-
-#     except:
-#         print("Error: Division by not Zero: ")  
-
-# div(10, 2)
-# div(10, 0)          

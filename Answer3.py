@@ -1,14 +1,16 @@
-# Using max() and min() function display the maximum and minimum of 5 random numbers.
+# Python Program to check if a number is positive, negative or 0.
 
-import random
+def check(n):
 
-random_numbers = [random.randint(1, 100) for _ in range(5)]
+    if n > 0:
+        print("Positive number")
+    elif n < 0:
+        print("Negative number")
+    else:
+        print("Zero number")
 
-max_numbers = max(random_numbers)
-min_numbers = min(random_numbers)
-
-print("The random num are : {random_num}")
-print("The max_num is : {max_num}")
-print("The min_num is : {min_num}")
-
+check(20)
+check(0)
+check(-5) 
+    
 

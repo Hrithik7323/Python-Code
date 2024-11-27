@@ -1,11 +1,7 @@
-# Declare a square() function with one parameter. Then call the function and pass one number and display the square of the number.
+# Python program to find the largest Among Three Number.
 
-def square(x):
+a = int(input("Enter first number : "))
+b = int(input("Enter second number : "))
+c = int(input("Enter third number : "))
 
-    return x * x
-
-num = int(input("Enter the number : "))
-
-result = square(num)
-
-print("Square : ", result)
+print("The largest Number of three is : ", max(a, b, c))
