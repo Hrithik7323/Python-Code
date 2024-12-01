@@ -1,9 +1,14 @@
-# 3.      Write a Python program that determines the largest of three numbers entered by the user.
+#3. Write a Python program using a while loop to iterate through each character of the string "Python" and print each character on a new line. 
+#   Additionally, calculate and print the length of the string.
 
+string = "Python"
+index = 0
+length = len(string)
 
-number1=int(input("enter the number"))
-number2=int(input("enter the number"))
-number3=int(input("enter the number"))
+#print(length)
 
-greater=max(number1,max(number2,number3))
-print(greater )
+while index < length:
+    print(string[index])
+    index += 1
+
+print("Length of the string:", length)    

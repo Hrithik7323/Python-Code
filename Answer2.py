@@ -1,12 +1,8 @@
-# 2.      Create a Python program that checks if a user-given number is positive, negative, or zero
+# 2.Create a code that describe the use of break statement in while loop
 
-
-number=int(input("enter the number"))
-if(number>0):
-    print("numer is positive")
-else:
-    if(number==0):
-        print("number is zero")
-    else:
-        print("number is negative")
-        
+i = 1
+while True:
+    print(i)
+    i += 1
+    if(i > 10):
+        break
