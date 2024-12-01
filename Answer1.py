@@ -1,13 +1,8 @@
-# Python program to check leap year.
+# 1.Write a Python program that determines if a given year is a leap year or not.
 
-def checkleap(year):
-    
-    if((year % 4 == 0) and (year % 100 == 0) and (year % 400 == 0)):
-        print("The year is a leap year")
-    else:
-        print("The year is not a leap year")
 
-year = int(input("Enter the number : "))
-
-checkleap(year)
-
+year=int(input("enter the year"))
+if(year % 4==0 and year % 100!= 0)or (year % 400 == 0):
+    print("leap year")
+else:
+    print("not leap year")

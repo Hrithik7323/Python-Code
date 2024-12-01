@@ -1,7 +1,12 @@
-# Python program to find the largest Among Three Number.
+# 2.      Create a Python program that checks if a user-given number is positive, negative, or zero
 
-a = int(input("Enter first number : "))
-b = int(input("Enter second number : "))
-c = int(input("Enter third number : "))
 
-print("The largest Number of three is : ", max(a, b, c))
+number=int(input("enter the number"))
+if(number>0):
+    print("numer is positive")
+else:
+    if(number==0):
+        print("number is zero")
+    else:
+        print("number is negative")
+        

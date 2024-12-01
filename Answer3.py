@@ -1,16 +1,9 @@
-# Python Program to check if a number is positive, negative or 0.
+# 3.      Write a Python program that determines the largest of three numbers entered by the user.
 
-def check(n):
 
-    if n > 0:
-        print("Positive number")
-    elif n < 0:
-        print("Negative number")
-    else:
-        print("Zero number")
+number1=int(input("enter the number"))
+number2=int(input("enter the number"))
+number3=int(input("enter the number"))
 
-check(20)
-check(0)
-check(-5) 
-    
-
+greater=max(number1,max(number2,number3))
+print(greater )
