@@ -1,8 +1,18 @@
-# 2.Create a code that describe the use of break statement in while loop
+# Write a Python program that prompts the user to input an integer and raises a 
+# ValueError exception if the input is not a valid integer.
 
-i = 1
-while True:
-    print(i)
-    i += 1
-    if(i > 10):
-        break
+
+def integer_input():
+    user_input = input("Please enter an integer: ")
+    
+    try:
+        number = int(user_input)
+        return number
+    except ValueError:
+        raise ValueError("The input is not a valid integer. Please enter a valid integer.")
+
+try:
+    user_integer = integer_input()
+    print("You entered the integer: user_integer")
+except ValueError as e:
+    print(e)

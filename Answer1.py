@@ -1,6 +1,12 @@
-# Print the reverse order series  using a while loop
+# Write a python program to handle a ZeroDevisionError exception when dividing a number by Zero.
 
-i = 10
-while i >= 1:
-    print(i)
-    i -= 1
+def divide_num(a, b):
+    
+    try:
+        a = 10
+        b = 0
+        result = a / b
+        print("result")
+
+    except ZeroDivisionError:
+        print("Not divide by Zero.")
